@@ -4,8 +4,8 @@ from pytube import YouTube, PlayList
 # User inputs
 while True:
     print("======================== Menu Options =====================================")
-    print("Enter your choice of options provided \n 1. To download the single video \n \
-    2. To download the playlist videos \n 0. Exit")
+    print("Enter your choice from options provided \n choose 1: To download the single video \n \
+    choose 2: To download the playlist videos \n choose 0: Exit")
     option = int(input("Enter the choice :- "))
     if option==0:
         break
@@ -23,8 +23,9 @@ while True:
         print("================== Playlist Download option ===========================")
         link = input("Enter the url of the playlist : ")
         playlist = Playlist(link)
-        #path = input("Enter the file path : ")
-        path = "/Users/rrajesh/Desktop/Video_Converter/Videos/VideoPlaylist/"
+                # Enter your prefered path
+        path = input("Enter the file path : ")
+        # path = "/Users/rrajesh/Desktop/Video_Converter/Videos/VideoPlaylist/"
         print("Number of videos : %s"% len(playlist.video_urls))
         print("Download in progress.....")
         for video in playlist.videos:
