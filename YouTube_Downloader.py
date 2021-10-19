@@ -4,7 +4,7 @@ from pytube import YouTube, PlayList
 # User inputs
 while True:
     print("======================== Menu Options =====================================")
-    options = print("Enter your choice of options provided \n 1. To download the single video \n \
+    print("Enter your choice of options provided \n 1. To download the single video \n \
     2. To download the playlist videos \n 0. Exit")
     option = int(input("Enter the choice :- "))
     if option==0:
