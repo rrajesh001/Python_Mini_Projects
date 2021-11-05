@@ -170,29 +170,34 @@ def cnn():
     print("Time Taken %s seconds " % round((time.time() - start_time), 2))
 
 
-start_time = time.time()
-while True:
-    menu()
-    opt = int(input("Enter Your Choice : "))
-    if opt == 0:
-        break
-    if opt == 1:
-        while True:
-            fbe()
-            Option = int(input("Enter your Choice : "))
-            if Option == 0:
-                break
-            if Option == 1:
-                imgf()
-            if Option == 2:
-                vf()
-            if Option == 3:
-                cf()
-    if opt == 2:
-        fr()
-    if opt == 3:
-        folr()
-    if opt == 4:
-        ce()
-    if opt == 5:
-        cnn()
+try:
+    start_time = time.time()
+    while True:
+        menu()
+        opt = int(input("Enter Your Choice : "))
+        if opt == 0:
+            break
+        if opt == 1:
+            while True:
+                fbe()
+                Option = int(input("Enter your Choice : "))
+                if Option == 0:
+                    break
+                if Option == 1:
+                    imgf()
+                if Option == 2:
+                    vf()
+                if Option == 3:
+                    cf()
+        if opt == 2:
+            fr()
+        if opt == 3:
+            folr()
+        if opt == 4:
+            ce()
+        if opt == 5:
+            cnn()
+except Exception as e:
+    print(e)
+finally:
+    pass
